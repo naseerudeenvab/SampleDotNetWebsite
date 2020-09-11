@@ -1,0 +1,17 @@
+﻿@model IEnumerable<SampleWebsite.Models.Participant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Participants</h2>
+
+<table class="table">
+    @foreach (var participant in Model) {
+    <tr>
+        <td>@participant.Name</td>
+        <td>@participant.Department</td>
+        <td>@participant.IsHost</td>
+    </tr>
+    }
+</table>
